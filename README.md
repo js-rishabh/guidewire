@@ -126,7 +126,7 @@ Edges: shared signals, timing
 
 IF cluster >10 users in <5 min → freeze cluster
 
-<img src="cluster.png" width="50%"/>
+<img src="cluster.png" width="40%"/>
 
 2.1.6 Environmental Consistency
 
@@ -148,3 +148,25 @@ Fraud becomes economically irrational:
 Genuine → full payout<br>
 Suspicious → partial payout<br>
 Fraud → stake burned<br>
+
+2.2 📊 The Data
+
+2.2.1 Multi-Modal Location
+
+Location = GPS + Cell Tower + WiFi + Sensor Data
+
+Data Sources
+
+    a. GPS (GNSS)
+    b. Cell towers
+    c. Weather APIs
+    d. Audio & video
+    e. IMU sensors
+    f. Barometer
+
+2.2.2 Key Enhancements
+
+    a. Hardware-backed attestation (TEE, Secure Enclave)
+    b. BLE proximity detection
+    c. Graph-based behavioral tracking
+    d. Adversarial ML training (+27% robustness)
