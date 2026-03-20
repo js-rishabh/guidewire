@@ -86,8 +86,7 @@ How do we verify that a worker is physically present in a dangerous weather envi
 Trust physical reality → Multi-signal validation → Score → Decide
 
 Architecture Flow
-![System Architecture](sys_arch.png)
-
+<img src="sys_arch.png" width="100%"/>
 
 2.1.2 Multi-Layer Defense
 
@@ -114,9 +113,9 @@ StormSafe replaces GPS-only verification with:
 
 ML models (LSTM / Random Forest) analyze:
 
-    Motion entropy<br>
-    Touch patterns<br>
-    Sensor noise<br>
+    a. Motion entropy
+    b. Touch patterns
+    c. Sensor noise
 
 Genuine users show irregular, high-variance behavior, while spoofers exhibit predictable patterns.
 
@@ -127,15 +126,15 @@ Edges: shared signals, timing
 
 IF cluster >10 users in <5 min → freeze cluster
 
-![System Architecture](cluster.png)
+<img src="cluster.png" width="100%"/>
 
 2.1.6 Environmental Consistency
 
 Validates real-world physics:
 
-    Signal degradation 
-    Noise fluctuations
-    Barometric pressure
+    a. Signal degradation 
+    b. Noise fluctuations
+    c. Barometric pressure
 
 Real storms change physical conditions — spoofers cannot replicate this reliably.
 
