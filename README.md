@@ -89,7 +89,7 @@ Architecture Flow
 ![System Architecture](sys_arch.png)
 
 
-Multi-Layer Defense
+2.1.2 Multi-Layer Defense
 
 StormSafe replaces GPS-only verification with:
 
@@ -98,4 +98,25 @@ Audio Signals → Identify storm acoustics<br>
 Network Validation → Cell tower vs GPS consistency<br>
 Social Proof → Witness confirmation<br>
 Economic Layer → Staking discourages fraud<br>
+
+
+2.1.3 Genuine vs Spoofer
+
+| Signal   | Genuine Worker     | Spoofer    |
+| -------- | ------------------ | ---------- |
+| Camera   | Rain / outdoor     | Indoor     |
+| Audio    | Storm noise        | Artificial |
+| Location | Consistent signals | Mismatch   |
+| Motion   | High entropy       | Flat       |
+| Behavior | Natural            | Scripted   |
+
+2.1.4 Behavioral Intelligence
+
+ML models (LSTM / Random Forest) analyze:
+
+Motion entropy<br>
+Touch patterns<br>
+Sensor noise<br>
+
+Genuine users show irregular, high-variance behavior, while spoofers exhibit predictable patterns.
 
