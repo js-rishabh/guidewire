@@ -80,3 +80,47 @@ The failure stems from:
 1.7 Core Problem Statement
 
 How do we verify that a worker is physically present in a dangerous weather environment — in real-time — in a way that cannot be spoofed at scale?
+
+2. 🛡️ Adversarial Defense & Anti-Spoofing Strategy
+
+2.1 🔍 The Differentiation
+
+2.1.1 System Philosophy
+
+Instead of:
+Trust GPS → Approve payout
+We move to:
+Trust Physical Reality → Validate via Multi-Modal Signals → Score → Decide
+
+2.1.2 High-Level Architecture
+
+Mobile SDK
+   │
+   ▼
+Ingestion Gateway (FastAPI)
+   │
+   ▼
+TrustScore Engine (ML Models)
+   │
+ ┌─┴──────────────┐
+ ▼                ▼
+APPROVE         FLAG
+ │                │
+ ▼                ▼
+Payout        Review Engine
+                 │
+                 ▼
+          Fraud Graph Engine
+
+🔁 System Flow
+
+flowchart TD
+    A[Mobile SDK] --> B[Ingestion API]
+    B --> C[TrustScore Engine]
+
+    C -->|High Score| D[Instant Payout]
+    C -->|Medium Score| E[Witness Check]
+    C -->|Low Score| F[Manual Review]
+
+    E --> D
+    F --> G[Fraud Graph Engine]
