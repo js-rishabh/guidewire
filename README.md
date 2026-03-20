@@ -86,7 +86,7 @@ How do we verify that a worker is physically present in a dangerous weather envi
 Trust physical reality → Multi-signal validation → Score → Decide
 
 Architecture Flow
-<img src="sys_arch.png" width="100%"/>
+<img src="sys_arch.png" width="50%"/>
 
 2.1.2 Multi-Layer Defense
 
@@ -126,7 +126,7 @@ Edges: shared signals, timing
 
 IF cluster >10 users in <5 min → freeze cluster
 
-<img src="cluster.png" width="100%"/>
+<img src="cluster.png" width="50%"/>
 
 2.1.6 Environmental Consistency
 
