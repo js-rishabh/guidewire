@@ -93,11 +93,11 @@ Architecture Flow
 
 StormSafe replaces GPS-only verification with:
 
-Visual Proof → Detect rain, lighting, outdoor conditions<br>
-Audio Signals → Identify storm acoustics<br>
-Network Validation → Cell tower vs GPS consistency<br>
-Social Proof → Witness confirmation<br>
-Economic Layer → Staking discourages fraud<br>
+    Visual Proof → Detect rain, lighting, outdoor conditions<br>
+    Audio Signals → Identify storm acoustics<br>
+    Network Validation → Cell tower vs GPS consistency<br>
+    Social Proof → Witness confirmation<br>
+    Economic Layer → Staking discourages fraud<br>
 
 
 2.1.3 Genuine vs Spoofer
@@ -114,9 +114,38 @@ Economic Layer → Staking discourages fraud<br>
 
 ML models (LSTM / Random Forest) analyze:
 
-Motion entropy<br>
-Touch patterns<br>
-Sensor noise<br>
+    Motion entropy<br>
+    Touch patterns<br>
+    Sensor noise<br>
 
 Genuine users show irregular, high-variance behavior, while spoofers exhibit predictable patterns.
 
+2.1.5 Fraud Graph Engine
+
+Nodes: users/devices
+Edges: shared signals, timing
+
+IF cluster >10 users in <5 min → freeze cluster
+
+![System Architecture](cluster.png)
+
+2.1.6 Environmental Consistency
+
+Validates real-world physics:
+
+    Signal degradation 
+    Noise fluctuations
+    Barometric pressure
+
+Real storms change physical conditions — spoofers cannot replicate this reliably.
+
+2.1.7 Witness Protocol
+Flagged claim → Nearby worker check → Confirm → Approve / Escalate
+
+2.1.8 Staking Model
+
+Fraud becomes economically irrational:
+
+Genuine → full payout<br>
+Suspicious → partial payout<br>
+Fraud → stake burned<br>
