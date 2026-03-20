@@ -170,3 +170,29 @@ Data Sources
     b. BLE proximity detection
     c. Graph-based behavioral tracking
     d. Adversarial ML training (+27% robustness)
+
+
+2.3 🎯 UX Balance
+
+2.3.1 Core Principle
+Security must not punish honest users.
+
+2.3.2 UX Flow
+
+Tap "I'm Stranded" → 5-sec check → Approve / Flag
+
+2.3.3 Outcomes
+
+| Result   | User Experience              |
+| -------- | ---------------------------- |
+| Approved | Instant payout               |
+| Flagged  | Partial payout + quick check |
+| Review   | Manual verification          |
+
+
+2.3.4 UX Features
+
+    a. Offline logging + secure sync
+    b. Multilingual support
+    c. Transparent communication
+    d. Partial payouts for safety
