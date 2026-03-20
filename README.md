@@ -5,12 +5,12 @@ DEVTrails 2026 | Phase 1 Submission
 
 📑 Table of Contents
 
-1.Problem Statement Breakdown
-2.Adversarial Defense & Anti-Spoofing Strategy
-    2.1 The Differentiation (Architecture, Flows, Tables)
-    2.2 The Data
-    2.3 The UX Balance
-3.Conclusion
+1.Problem Statement Breakdown<br>
+2.Adversarial Defense & Anti-Spoofing Strategy<br>
+    2.1 The Differentiation (Architecture, Flows, Tables)<br>
+    2.2 The Data<br>
+    2.3 The UX Balance<br>
+3.Conclusion<br>
 
 
 1. 🚨 Problem Statement Breakdown
@@ -93,8 +93,9 @@ Multi-Layer Defense
 
 StormSafe replaces GPS-only verification with:
 
-Visual Proof → Detect rain, lighting, outdoor conditions
-Audio Signals → Identify storm acoustics
-Network Validation → Cell tower vs GPS consistency
-Social Proof → Witness confirmation
-Economic Layer → Staking discourages fraud
+Visual Proof → Detect rain, lighting, outdoor conditions<br>
+Audio Signals → Identify storm acoustics<br>
+Network Validation → Cell tower vs GPS consistency<br>
+Social Proof → Witness confirmation<br>
+Economic Layer → Staking discourages fraud<br>
+
