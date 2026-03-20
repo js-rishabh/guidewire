@@ -14,28 +14,24 @@ DEVTrails 2026 | Phase 1 Submission
 
 
 1. 🚨 Problem Statement Breakdown
-1.1 The Gig Economy Reality
-India’s gig economy consists of 15M+ delivery workers operating under high uncertainty. During severe weather events such as:
 
-Cyclones
-Flash floods
-Thunderstorms
+India’s gig economy has 15M+ delivery workers who face a critical choice during severe weather (cyclones, floods, storms):
 
 workers face a binary choice:
-
 | Option           | Outcome            |
 | ---------------- | ------------------ |
 | Continue working | Risk life & safety |
 | Stop working     | Lose daily income  |
 
-1.2 Why Traditional Insurance Fails
+Why Traditional Insurance Fails
 
-Traditional insurance models are not viable because:
+Manual claims
 
-    Require manual claims
-    Need proof collection (impossible during storms)
-    Slow settlement cycles (days/weeks)
-    High friction for low-income workers
+Proof collection impossible in storms
+
+Slow payouts
+
+High friction
 
 1.3 Parametric Insurance — The Ideal Solution
 
@@ -87,40 +83,18 @@ How do we verify that a worker is physically present in a dangerous weather envi
 
 2.1.1 System Philosophy
 
-Instead of:
-Trust GPS → Approve payout
-We move to:
-Trust Physical Reality → Validate via Multi-Modal Signals → Score → Decide
+Trust physical reality → Multi-signal validation → Score → Decide
 
-2.1.2 High-Level Architecture
+Architecture Flow
+![System Architecture](sys_arch.png)
 
-Mobile SDK
-   │
-   ▼
-Ingestion Gateway (FastAPI)
-   │
-   ▼
-TrustScore Engine (ML Models)
-   │
- ┌─┴──────────────┐
- ▼                ▼
-APPROVE         FLAG
- │                │
- ▼                ▼
-Payout        Review Engine
-                 │
-                 ▼
-          Fraud Graph Engine
 
-🔁 System Flow
+Multi-Layer Defense
 
-flowchart TD
-    A[Mobile SDK] --> B[Ingestion API]
-    B --> C[TrustScore Engine]
+StormSafe replaces GPS-only verification with:
 
-    C -->|High Score| D[Instant Payout]
-    C -->|Medium Score| E[Witness Check]
-    C -->|Low Score| F[Manual Review]
-
-    E --> D
-    F --> G[Fraud Graph Engine]
+Visual Proof → Detect rain, lighting, outdoor conditions
+Audio Signals → Identify storm acoustics
+Network Validation → Cell tower vs GPS consistency
+Social Proof → Witness confirmation
+Economic Layer → Staking discourages fraud
